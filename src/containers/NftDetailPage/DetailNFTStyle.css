@@ -1,0 +1,369 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.closeButton {
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  z-index: 10;
+}
+.walletPopUpBack {
+  background-color: rgba(10, 10, 10, 0.836);
+  height: 100%vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.properties {
+  /* width: 95%; */
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.propertiesDetails {
+  box-shadow: 0px 0px 8px #33ff00 inset;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.propertiesMobileDetails {
+  box-shadow: 0px 0px 8px #33ff00 inset;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+.propertiesLine {
+  width: 95%;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+  gap: 10px;
+}
+.propertiesHeading {
+  font-size: 38px;
+  font-weight: 900;
+  padding-left: 10px;
+  text-shadow: 0px 5px 5px rgba(51, 255, 0, 0.42);
+}
+
+.description {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px;
+}
+.pageDivider {
+  box-sizing: border-box;
+  height: 1px;
+  border-top: 1px solid darkslategray;
+  width: 95%;
+  margin: 10px 0px;
+}
+
+.nftDetailsDropdown {
+  width: 180px;
+  list-style: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 10px;
+  right: 10px;
+  padding: 10px 10px;
+  background: #2e3f29;
+  z-index: 1;
+}
+.nftDetailsDropdownItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+.nftDetailsDropdownText {
+  font-size: 20px;
+  /* margin-bottom: 20px; */
+}
+.classifications {
+  width: 95%;
+}
+.classificationDetail {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 56px;
+  padding-top: 22px;
+}
+.classificationDetailText {
+  text-shadow: 0px 5px 5px rgba(51, 255, 0, 0.42);
+  font-weight: 700;
+  font-size: 38px;
+}
+.classificationDetailCardParent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 22px 0px;
+  gap: 16px;
+}
+.classificationDetailCard {
+  background-color: #2e3f29;
+  border-radius: 22px;
+  min-height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: justify-start;
+  align-items: center;
+  padding: 0px 15px;
+  gap: 10px;
+  width: 250px;
+  text-overflow: ellipse;
+}
+.bullets {
+  box-shadow: 0px 0px 10px #33ff00 inset;
+  height: 35px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+}
+.nftDetailDivider {
+  box-sizing: border-box;
+  height: 1px;
+  border-top: 1px solid darkslategray;
+  margin-left: 56px;
+}
+.priceBox {
+  box-shadow: 0px 0px 10px #33ff00 inset;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 10px;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100px;
+}
+
+.priceTag {
+  font-weight: 800;
+  font-size: 48px;
+}
+.buyBox {
+  /* box-shadow: 0px 0px 8px #33ff00 inset; */
+  background-color: #33ff00;
+  color: black;
+  cursor: pointer;
+  height: 35px;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.buyBox:hover {
+  box-shadow: 0px 0px 28px #33ff00 inset;
+  background-color: #33ff004f;
+  transition: 1000ms;
+  z-index: 1000;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1150px) {
+  .classifications {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 45px;
+  }
+  .classificationDetail {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 56px;
+    padding: 15px 0px;
+  }
+  .classificationDetailText {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .classificationDetailCardParent {
+    padding: 15px 0px;
+    gap: 16px;
+  }
+  .priceBox {
+    box-shadow: 0px 0px 10px #33ff00 inset;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+  }
+  .priceTag {
+    font-weight: 800;
+    font-size: 38px;
+  }
+  .buyBox {
+    box-shadow: 0px 0px 8px #33ff00 inset;
+    height: 25px;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .buyBox:hover {
+    box-shadow: 0px 0px 28px #33ff00 inset;
+    background-color: #33ff004f;
+    transition: 1000ms;
+    z-index: 1000;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .classifications {
+    margin-left: 10px;
+  }
+  .classificationDetail {
+    margin-left: 10px;
+  }
+
+  .classificationDetailCardParent {
+    padding: 4px 0px;
+    gap: 5px;
+  }
+
+  .nftDetailDivider {
+    margin-left: 10px;
+  }
+  .nftDetailDivider {
+    display: none;
+  }
+  .priceBox {
+    padding: 0px 10px;
+    height: 100px;
+    margin-top: 10px;
+  }
+
+  .priceTag {
+    font-size: 20px;
+  }
+
+  .buyBox {
+    height: 25px;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .propertiesLine {
+    width: 95%;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    gap: 10px;
+  }
+  .propertiesHeading {
+    font-size: 25px;
+    font-weight: 900;
+    padding-left: 10px;
+    text-shadow: 0px 5px 5px rgba(51, 255, 0, 0.42);
+  }
+  .classifications {
+    width: 95%;
+    margin-left: 0;
+  }
+  .classificationDetail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .classificationDetailText {
+    text-shadow: 0px 5px 5px rgba(51, 255, 0, 0.42);
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .classificationDetailCard {
+    height: 55px;
+    min-width: 150px;
+    padding: 0px 11px;
+    gap: 8px;
+  }
+
+  .classificationDetailCardParent {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+  .bullets {
+    height: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 15px;
+    gap: 5px;
+  }
+  .priceBox {
+    font-size: 12px;
+    padding: 2px 8px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+  }
+  .priceTag {
+    font-size: 18px;
+  }
+  .buyBox {
+    height: 35px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

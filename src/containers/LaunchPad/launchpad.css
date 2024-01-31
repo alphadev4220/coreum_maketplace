@@ -1,0 +1,564 @@
+.divider {
+  box-sizing: border-box;
+  height: 1px;
+  border-top: 1px solid darkslategray;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.nftInfo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin-top: 3rem;
+}
+
+.parent {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.child {
+  min-width: 350px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: black;
+  box-shadow: inset 0px 0px 10px 6px rgba(51, 255, 0, 0.78);
+  margin-top: 1rem;
+}
+
+.subChild {
+  font-size: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: white;
+}
+/* ------------NFT Info End--------- */
+
+.mynft {
+  width: 90%;
+}
+
+.contactImg {
+  height: 40px;
+}
+
+.closeButton {
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  z-index: 10;
+}
+
+.editFirst {
+  position: absolute;
+  top: 52px;
+  right: 35px;
+  height: 35px;
+}
+.saveFirst {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  box-shadow: 0px 0px 10px #33ff00 inset;
+  height: 36px;
+  width: 98px;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 12px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.editTitle {
+  width: 92%;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  padding: 12px 10px 10px 20px;
+  margin-top: 30px;
+  /* height: 40px; */
+  box-shadow: 0px 0px 10px 6px rgba(51, 255, 0, 0.618) inset;
+}
+.editDesc {
+  width: 92%;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  padding: 12px 20px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px 6px rgba(51, 255, 0, 0.618) inset;
+}
+.uploadDivMain {
+  width: 100%;
+  height: 474px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.uploadDivRight {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.uploadDivLeft {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+.uploadDivLeftC {
+  background-color: #000;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+}
+.uploadDivLeftA {
+  background-color: #00000085;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  padding: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.editContact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.editContactChild {
+  width: 50%;
+}
+.clearButton {
+  width: 30px;
+  height: 30px;
+}
+
+.addReferralButton {
+  box-shadow: 0px 0px 10px 6px rgba(51, 255, 0, 0.618) inset;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-shadow: 0px 5px 5px rgba(51, 255, 0, 0.42);
+}
+
+.referralLinkEdit {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.custom-datetimepicker {
+  /* border: 1px solid white; */
+  color: white;
+}
+
+.custom-background {
+  background-color: black;
+  color: white;
+}
+.buttonsLastDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsLast {
+  width: 250px;
+  font-size: 20px;
+}
+
+.walletPopUpBack {
+  background-color: rgba(10, 10, 10, 0.9);
+  height: 100%vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 3rem; */
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------Media Queries----------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+@media screen and (max-width: 2520px) {
+  .subChild {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .subChild {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .text {
+    font-size: 15px;
+  }
+
+  .uploadDivMain {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nftCard {
+    width: 80%;
+  }
+
+  .contactImg {
+    height: 30px;
+  }
+  .referralLinkText {
+    font-size: 15px;
+  }
+
+  .buttonsLast {
+    width: 150px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .child {
+    width: 215px;
+  }
+
+  .referralLinkText {
+    font-size: 10px;
+  }
+  .reffralImage {
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contactImg {
+    height: 25px;
+  }
+  .reffralImage {
+    height: 15px;
+  }
+}
+
+/* ------------NFT Info Queries--------- */
+@media screen and (min-width: 1440px) {
+  .child {
+    min-width: 410px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: black;
+    box-shadow: inset 0px 0px 10px 6px rgba(51, 255, 0, 0.78);
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .child {
+    min-width: 300px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: black;
+    box-shadow: inset 0px 0px 10px 6px rgba(51, 255, 0, 0.78);
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .nftInfo {
+    position: relative;
+    display: flex;
+    flex-direction: col;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .parent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .child {
+    min-width: 350px;
+    padding: 15px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: black;
+    box-shadow: inset 0px 0px 10px 6px rgba(51, 255, 0, 0.78);
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .buttonsLastDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .divider {
+    margin: 20px auto;
+  }
+
+  .editContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .editContactChild {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .mynft {
+    width: 60%;
+  }
+  .browseNft {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .clearButton {
+    width: 25px;
+    height: 25px;
+  }
+  .balance {
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+
+  .nftDetailImage {
+    height: 425px;
+  }
+
+  .uploadDivMain {
+    height: 350px;
+  }
+  .saveFirst {
+    top: 380px;
+    right: 78px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .uploadDivMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .uploadDivLeft {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 644px) {
+  .buttonsLastDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+  }
+  .buttonsLast {
+    width: 200px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .uploadDivMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .uploadDivRight {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .uploadDivLeft {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+  }
+  .editFirst {
+    position: absolute;
+    top: 19px;
+    right: 14px;
+    height: 25px;
+  }
+  .saveFirst {
+    position: absolute;
+    top: 361px;
+    right: 65px;
+    box-shadow: 0px 0px 10px #33ff00 inset;
+    height: 36px;
+    width: 49px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .saveFirst {
+    position: absolute;
+    top: 354px;
+    right: 28px;
+    box-shadow: 0px 0px 10px #33ff00 inset;
+    height: 30px;
+    width: 52px;
+  }
+}
+@media screen and (max-width: 524px) {
+  .nftInfo {
+    position: relative;
+    display: flex;
+    flex-direction: col;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .parent {
+    min-width: 100%;
+  }
+  .child {
+    min-width: 250px;
+    padding: 15px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: black;
+    box-shadow: inset 0px 0px 10px 6px rgba(51, 255, 0, 0.78);
+    margin-top: 0.5rem;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .referralHeading {
+    font-size: 25px;
+  }
+  .editContactChild {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .saveFirst {
+    position: absolute;
+    top: 320px;
+    right: 28px;
+    box-shadow: 0px 0px 10px #33ff00 inset;
+    height: 30px;
+    width: 52px;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .editContactChild {
+    width: 100%;
+  }
+  .buttonsLast {
+    width: 135px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .child {
+    min-width: 215px;
+  }
+}
+
+.menu {
+  position: relative;
+}
+
+.absolute.left-0 {
+  left: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 1s forwards;
+}
